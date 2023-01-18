@@ -78,5 +78,35 @@ def buscar():
             
             dic[n]=d
             print(dic)
-            
+        
+        elif opcion == 3:
+            n = input('Dime la calificación que quieres buscar: ')
+            dic = {}
+            l = []
+
+            for i in notas:
+                if i[PRACTICA]==n:
+                    t = (i(ALUMNO), i(ASIGNATURA))
+                    l.append(t)
+
+            dic[i] = l
+            print(dic)
+
+        elif opcion == 4:
+            n = int(input('Dime que nota quieres buscar: '))
+            dic = {}
+            l = []
+
+            for i in notas:
+                l2 = []
+                for j in i[NOTAS]:
+                    if j >= n:
+                        
+                        l2.append(j)
+                        t = (i[ALUMNO], i[ASIGNATURA], l2)
+                        l.append(t)
+            dic[n] = l
+            print(dic)
+
+
 print(buscar())
