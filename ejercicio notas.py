@@ -101,12 +101,14 @@ def buscar():
                 l2 = []
                 for j in i[NOTAS]:
                     if j >= n:
-                        
                         l2.append(j)
                         t = (i[ALUMNO], i[ASIGNATURA], l2)
                         l.append(t)
+
             dic[n] = l
             print(dic)
 
+        elif opcion == 5:
+            break
 
 print(buscar())
