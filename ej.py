@@ -20,9 +20,9 @@ def notas():
             l = []
             parar = True
             while parar:
-                n = input('Introduce una nota: ')
-                if n != 'x':
-                    l.append(int(n))
+                nota = input('Introduce una nota: ')
+                if nota != 'x':
+                    l.append(int(nota))
                 else:
                     parar = False
             
